@@ -58,10 +58,81 @@ for i in set(s):
     print("elements",i,"count",count)
 """
 
-    
+6#find duplicate element in string
+
+"""
+s = input()
+sx = ""
+for i in s:
+    if i not in sx:
+        sx +=i
+    else:
+        print("duplicate element in the string",i)
+"""
+7#Reverse a string without using slicing
+
+"""
+s = input()
+rev = ""
+for i in s:
+    print(i)
+    rev = i + rev
+print(rev)
+"""
+
+8#Check if two strings are anagrams
+# sorted() is a Python built-in function used to arrange elements in order (ascending by default).
+"""
+s1 = input()
+s2 = input()
+
+if sorted(s1) == sorted(s2):
+    print("string is anagram")
+else:
+    print("string is not anagram")
+"""
+#without using built in methods
+"""
+s1 = input()
+s2 = input()
+
+if len(s1) != len(s2):
+    print("not anagram")
+else:
+    for i in s1:
+        if s1.count(i) != s2.count(i):
+            print("not anagrams")
+            break
+    else:
+        print("anagram")
+
+
+"""
 
 
 
 
- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
